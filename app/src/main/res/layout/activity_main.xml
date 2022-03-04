@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="cambiarBtn"
     tools:context=".MainActivity">
 
     <TextView
@@ -45,55 +46,21 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/autor"
-        app:layout_constraintVertical_bias="0.377">
-
-        <TableRow
-            android:id="@+id/fila2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <ImageButton
-                android:id="@+id/f2_btn1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00000000"
-                android:scaleType="fitXY"
-                app:srcCompat="@mipmap/squere" />
-
-            <ImageButton
-                android:id="@+id/f2_btn2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00000000"
-                android:scaleType="fitXY"
-                app:srcCompat="@mipmap/squere" />
-
-            <ImageButton
-                android:id="@+id/f2_btn3"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#00000000"
-                android:scaleType="fitXY"
-                app:srcCompat="@mipmap/squere" />
-        </TableRow>
+        app:layout_constraintVertical_bias="0.343">
 
         <TableRow
             android:id="@+id/fila1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:layout_weight="1">
 
             <ImageButton
-                android:id="@+id/f1_btn3"
+                android:id="@+id/f1_btn1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#00000000"
+                android:onClick="cambiarBtn"
                 android:scaleType="fitXY"
                 app:srcCompat="@mipmap/squere" />
 
@@ -103,17 +70,58 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#00000000"
+                android:onClick="cambiarBtn"
                 android:scaleType="fitXY"
                 app:srcCompat="@mipmap/squere" />
 
             <ImageButton
-                android:id="@+id/f1_btn1"
+                android:id="@+id/f1_btn3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#00000000"
+                android:onClick="cambiarBtn"
                 android:scaleType="fitXY"
                 app:srcCompat="@mipmap/squere" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fila2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/f2_btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+
+            <ImageButton
+                android:id="@+id/f2_btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+
+            <ImageButton
+                android:id="@+id/f2_btn3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="cambiarBtn"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/squere" />
+
         </TableRow>
 
         <TableRow
@@ -128,6 +136,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#00000000"
+                android:onClick="cambiarBtn"
                 android:scaleType="fitXY"
                 app:srcCompat="@mipmap/squere" />
 
@@ -137,6 +146,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#00000000"
+                android:onClick="cambiarBtn"
                 android:scaleType="fitXY"
                 app:srcCompat="@mipmap/squere" />
 
@@ -146,6 +156,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#00000000"
+                android:onClick="cambiarBtn"
                 android:scaleType="fitXY"
                 app:srcCompat="@mipmap/squere" />
         </TableRow>
@@ -162,18 +173,19 @@
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/radioBtnX"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="RadioButton" />
+                    android:checked="true"
+                    android:text="X" />
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/radioBtnO"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="RadioButton" />
+                    android:text="O" />
             </RadioGroup>
         </TableRow>
     </TableLayout>
